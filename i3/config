@@ -127,4 +127,5 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 #wallpaper
 exec_always --no-startup-id feh --bg-fill "$HOME/Pictures/Wallpapers/luvsasha.png"
+exec_always --no-startup-id picom --experimental-backends
 
