@@ -97,7 +97,7 @@ client.background       #ffffff
 
 #default_border pixel 1
 
-for_window [class="^.*"] border pixel 2
+for_window [all] border pixel 2
 
 
 
@@ -127,5 +127,5 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 #wallpaper
 exec_always --no-startup-id feh --bg-fill "$HOME/Pictures/Wallpapers/luvsasha.png"
-exec_always --no-startup-id picom --experimental-backends
+exec_always --no-startup-id picom -b
 
