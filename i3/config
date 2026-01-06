@@ -123,7 +123,7 @@ gaps outer 1px
 #
 # inverse_outer only enables outer gaps when there is exactly one
 # window or split container on the workspace.
-smart_gaps inverse_outer
+smart_gaps off
 
 
 #Brightness 
