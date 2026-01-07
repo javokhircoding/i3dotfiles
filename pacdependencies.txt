@@ -3,6 +3,6 @@ xtodool
 locate
 fzf
 xclip
-
+xcolor
 
 
