@@ -2,3 +2,7 @@ maim
 xtodool
 locate
 fzf
+xclip
+
+
+
