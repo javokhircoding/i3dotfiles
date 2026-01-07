@@ -4,5 +4,7 @@ locate
 fzf
 xclip
 xcolor
-
-
+xorg-xset
+xorg-*
+i3status
+i3blocks
