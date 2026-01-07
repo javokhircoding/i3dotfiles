@@ -126,12 +126,28 @@ gaps outer 1px
 smart_gaps off
 
 
+#Screenshots using main, 
+bindsym $mod+Shift+s exec "\
+    echo 1 > /sys/class/leds/platform\:\:micmute/brightness; \
+    sleep 5; \
+    maim --hidecursor ~/Pictures/Screenshots/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; \
+    echo 0 > /sys/class/leds/platform\:\:micmute/brightness; \
+    i3-nagbar --message 'Screenshot created' --type warning & \
+    sleep 3; pkill i3-nagbar"
+
+
 #Brightness 
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 #wallpaper
 exec_always --no-startup-id feh --bg-fill "$HOME/Pictures/Wallpapers/luvsasha.png"
+
+#for kitty, X11 composer
 exec_always --no-startup-id picom -b
+
+#libinit-gestures
 exec_always --no-startup-id libinput-gestures-setup start
+
+
 
