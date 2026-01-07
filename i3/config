@@ -127,13 +127,8 @@ smart_gaps off
 
 
 #Screenshots using main, 
-bindsym $mod+Shift+s exec "\
-    echo 1 > /sys/class/leds/platform\:\:micmute/brightness; \
-    sleep 5; \
+bindsym Print exec "\
     maim --hidecursor ~/Pictures/Screenshots/$(date +%Y-%b-%d--%H-%M-%S_maim | tr A-Z a-z).png; \
-    echo 0 > /sys/class/leds/platform\:\:micmute/brightness; \
-    i3-nagbar --message 'Screenshot created' --type warning & \
-    sleep 3; pkill i3-nagbar"
 
 
 #Brightness 

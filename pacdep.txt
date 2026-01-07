@@ -1,8 +1,4 @@
-# Here I save the dependencies for the stuff
-
-#Screenshot
 maim
-
-#pacman
+xtodool
 locate
 fzf
