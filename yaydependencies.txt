@@ -3,3 +3,4 @@ ttf-victor-mono
 
 
 ttf-jetbrains-mono-nerd
+font-awesome
