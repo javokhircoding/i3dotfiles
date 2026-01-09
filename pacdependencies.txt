@@ -19,3 +19,4 @@ pipewire-jack
 pipewire-alsa
 pipewire-pulse
 networkmanager
+fish
