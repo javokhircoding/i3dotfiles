@@ -44,3 +44,5 @@ include gaps/gaps.conf
 #Autostarts
 include autostart.conf
 
+#Wallpaper
+include wallpaper.conf
